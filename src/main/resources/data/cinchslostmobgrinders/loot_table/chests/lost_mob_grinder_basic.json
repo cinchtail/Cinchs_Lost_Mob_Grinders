@@ -161,5 +161,5 @@
       "rolls": 20.0
     }
   ],
-  "random_sequence": "cinchsruinedmobgrinders:chests/ruined_mob_grinder_basic"
+  "random_sequence": "cinchslostmobgrinders:chests/lost_mob_grinder_basic"
 }
