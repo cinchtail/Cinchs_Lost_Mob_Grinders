@@ -3,6 +3,10 @@
     {
       "structure": "cinchslostmobgrinders:lost_mob_grinder",
       "weight": 1
+    },
+    {
+      "structure": "cinchslostmobgrinders:lost_mob_grinder_badlands",
+      "weight": 1
     }
   ],
   "placement": {
