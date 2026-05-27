@@ -55,6 +55,33 @@
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "cinchslostmobgrinders:lost_mob_grinders/normal/pipes/pipe_2",
+        "processors": "cinchslostmobgrinders:lost_mob_grinder_normal",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "cinchslostmobgrinders:lost_mob_grinders/normal/pipes/pipe_3",
+        "processors": "cinchslostmobgrinders:lost_mob_grinder_normal",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "cinchslostmobgrinders:lost_mob_grinders/normal/pipes/pipe_4",
+        "processors": "cinchslostmobgrinders:lost_mob_grinder_normal",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
     }
   ]
 }
