@@ -1,0 +1,51 @@
+{
+  "name": "cinchslostmobgrinders:lost_mob_grinder_lush/pipe_1",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "cinchslostmobgrinders:lost_mob_grinders/lush/rooms/room_1",
+        "processors": "cinchslostmobgrinders:lost_mob_grinder_lush",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "cinchslostmobgrinders:lost_mob_grinders/lush/rooms/room_2",
+        "processors": "cinchslostmobgrinders:lost_mob_grinder_lush",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "cinchslostmobgrinders:lost_mob_grinders/lush/rooms/room_3",
+        "processors": "cinchslostmobgrinders:lost_mob_grinder_lush",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "cinchslostmobgrinders:lost_mob_grinders/lush/rooms/room_4",
+        "processors": "cinchslostmobgrinders:lost_mob_grinder_lush",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "cinchslostmobgrinders:lost_mob_grinders/lush/rooms/room_5",
+        "processors": "cinchslostmobgrinders:lost_mob_grinder_lush",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}
