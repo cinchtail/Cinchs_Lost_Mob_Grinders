@@ -8,8 +8,10 @@ plugins {
 version = mod_version
 group = mod_group_id
 
+version = project.findProperty('modVersion') as String
+
 base {
-    archivesName = mod_id + "-[Forge-Fabric-1.21.x-26.1.x]"
+    archivesName = mod_id + "-[Forge-Fabric-NeoForge-1.21-26.1.x]"
 }
 
 // Mojang ships Java 21 to end users in 1.20.5+, so your mod should target Java 21.
@@ -149,7 +151,9 @@ dependencies {
 // See https://docs.gradle.org/current/dsl/org.gradle.language.jvm.tasks.ProcessResources.html
 tasks.named('processResources', ProcessResources).configure {
     var replaceProperties = [
+            version: version,
             minecraft_version: minecraft_version,
+            minecraft_version_range: minecraft_version_range,
             forge_version: forge_version,
             loader_version_range: loader_version_range,
             mod_id: mod_id,
@@ -161,7 +165,7 @@ tasks.named('processResources', ProcessResources).configure {
     ]
     inputs.properties replaceProperties
 
-    filesMatching(['META-INF/mods.toml', 'pack.mcmeta']) {
+    filesMatching(["fabric.mod.json", "META-INF/mods.toml", "META-INF/neoforge.mods.toml", "pack.mcmeta"]) {
         expand replaceProperties + [project: project]
     }
 }
@@ -178,6 +182,15 @@ tasks.named('jar', Jar).configure {
             'Implementation-Vendor'   : mod_authors
         ])
     }
+}
+
+tasks.processResources {
+    def meta = [
+            'version': version,
+    ]
+    filesMatching('fabric.mod.json') { expand(meta) }
+    filesMatching('META-INF/*.toml') { expand(meta) }
+    filesMatching('pack.mcmeta') { expand(meta) }
 }
 
 // Example configuration to allow publishing using the maven-publish plugin
