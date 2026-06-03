@@ -9,7 +9,7 @@
   ],
   "contact": {
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/cinchs-lost_mob_grinders/files/all?page=1&pageSize=20",
-    "sources": "https://github.com/cinchtail/Cinchs_Lost_Mob_Grinders/tree/Forge-Fabric-1.21.x-26.1.x"
+    "sources": "https://github.com/cinchtail/Cinchs_Lost_Mob_Grinders/tree/Forge-Fabric-NeoForge-1.21-26.1.x"
   },
   "license": "${mod_license}",
   "icon": "icon.png",

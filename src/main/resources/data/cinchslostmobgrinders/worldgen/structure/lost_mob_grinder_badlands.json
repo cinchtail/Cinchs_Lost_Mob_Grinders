@@ -8,7 +8,7 @@
   "liquid_settings": "ignore_waterlogging",
   "terrainAdjustment": "rigid",
   "start_height": {
-    "absolute": 15
+    "absolute": 25
   },
   "use_expansion_hack": false,
   "spawn_overrides": {}
