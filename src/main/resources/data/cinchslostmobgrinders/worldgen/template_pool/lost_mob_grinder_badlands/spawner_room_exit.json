@@ -1,0 +1,24 @@
+{
+  "name": "cinchslostmobgrinders:lost_mob_grinder_badlands/spawner_room_exit",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 3,
+      "element": {
+        "location": "cinchslostmobgrinders:lost_mob_grinders/badlands/rooms/room_1",
+        "processors": "cinchslostmobgrinders:lost_mob_grinder_badlands",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 7,
+      "element": {
+        "location": "cinchslostmobgrinders:lost_mob_grinders/badlands/pipes/room_start",
+        "processors": "cinchslostmobgrinders:lost_mob_grinder_badlands",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

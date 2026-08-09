@@ -1,0 +1,33 @@
+{
+  "name": "cinchslostmobgrinders:lost_mob_grinder_badlands/rooms",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "cinchslostmobgrinders:lost_mob_grinders/badlands/rooms/room_2",
+        "processors": "cinchslostmobgrinders:lost_mob_grinder_badlands",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "cinchslostmobgrinders:lost_mob_grinders/badlands/rooms/room_3",
+        "processors": "cinchslostmobgrinders:lost_mob_grinder_badlands",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "cinchslostmobgrinders:lost_mob_grinders/badlands/rooms/room_4",
+        "processors": "cinchslostmobgrinders:lost_mob_grinder_badlands",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}
