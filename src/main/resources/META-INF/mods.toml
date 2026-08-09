@@ -13,18 +13,15 @@ displayName="${mod_name}"
 # A URL to query for updates for this mod. See the JSON update specification https://docs.minecraftforge.net/en/latest/misc/updatechecker/
 #updateJSONURL="https://change.me.example.invalid/updates.json" #optional
 
-# A URL for the "homepage" for this mod, displayed in the mod UI
-#displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
-
+displayURL="${mod_homepage}"
 logoFile="icon.png"
-#credits="" #optional
 authors="${mod_authors}"
 description='''${mod_description}'''
 
 [[dependencies.${mod_id}]]
     modId="forge"
     mandatory=true
-    versionRange="${minecraft_version_range}"
+    versionRange="${loader_version_range}"
     ordering="NONE"
     side="BOTH"
 

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "cinchslostmobgrinders",
+  "id": "${mod_id}",
   "version": "${version}",
   "name": "${mod_name}",
   "description": "${mod_description}",
@@ -8,14 +8,25 @@
     "${mod_authors}"
   ],
   "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/cinchs-lost_mob_grinders/files/all?page=1&pageSize=20",
-    "sources": "https://github.com/cinchtail/Cinchs_Lost_Mob_Grinders/tree/Forge-Fabric-NeoForge-1.21-26.1.x"
+    "homepage": "${mod_homepage}",
+    "sources": "${mod_sources}"
   },
   "license": "${mod_license}",
   "icon": "icon.png",
   "environment": "*",
   "depends": {
     "fabricloader": ">=0.16.14",
-    "minecraft": ["1.21","1.21.1","1.21.2","1.21.3","1.21.4","1.21.5","1.21.6","1.21.7","1.21.8","1.21.9","1.21.10","1.21.11","26.1","26.1.1","26.1.2","26.2"]
+    "minecraft": ">=0.21.0"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "${mod_discord}",
+        "modmenu.curseforge": "${mod_curseforge}",
+        "modmenu.modrinth": "${mod_modrinth}",
+        "modmenu.kofi": "${mod_kofi}",
+        "modmenu.youtube": "${mod_youtube}"
+      }
+    }
   }
 }
