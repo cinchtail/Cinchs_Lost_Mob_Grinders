@@ -15,12 +15,7 @@
         "sources": "${mod_sources}"
       },
       "icon": "icon.png",
-      "license": {
-        "name": "${mod_license}",
-        "id": "ARR",
-        "url": "https://github.com/cinchtail/Cinchs_Lost_Mob_Grinders/blob/UNIVERSAL-1.21-26.2/LICENSE",
-        "description": "All Rights Reserved"
-      }
+      "license": "${mod_license}"
     },
     "intermediate_mappings": "net.fabricmc:intermediary",
     "depends": [

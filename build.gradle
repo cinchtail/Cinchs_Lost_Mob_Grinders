@@ -112,15 +112,6 @@ tasks.named('jar', Jar).configure {
     }
 }
 
-tasks.processResources {
-    def meta = [
-            'version': version,
-    ]
-    filesMatching('fabric.mod.json') { expand(meta) }
-    filesMatching('META-INF/*.toml') { expand(meta) }
-    filesMatching('pack.mcmeta') { expand(meta) }
-}
-
 publishing {
     publications {
         register('mavenJava', MavenPublication) {
