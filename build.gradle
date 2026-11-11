@@ -3,14 +3,13 @@ plugins {
     id 'idea'
     id 'maven-publish'
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
-    //id("net.neoforged.moddev.legacyforge") version "2.0.143"
 }
 
 version = mod_version
 group = mod_group_id
 
 base {
-    archivesName = mod_id + "-[Forge-Fabric-1.20.x]"
+    archivesName = "CLMG-[Forge-Fabric-1.20.x]"
 }
 
 def modName = (project.findProperty('mod_name') ?: project.name) as String
@@ -20,6 +19,7 @@ def modDescription = project.findProperty('mod_description') as String
 def modAuthors = project.findProperty('mod_authors') as String
 def modHomepage = project.findProperty('mod_homepage') as String
 def modSources = project.findProperty('mod_sources') as String
+def modIssues = project.findProperty('mod_issues') as String
 def modDiscord = project.findProperty('mod_discord') as String
 def modKofi = project.findProperty('mod_kofi') as String
 def modCurseforge = project.findProperty('mod_curseforge') as String
@@ -108,35 +108,32 @@ repositories {
 
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
-    //implementation("net.neoforged.moddev.legacyforge:net.neoforged.moddev.legacyforge.gradle.plugin:2.0.143")
 }
 
 tasks.processResources {
     def meta = [
-            'version': version,
-            'minecraft_version': minecraft_version,
+            'version'                : version,
+            'minecraft_version'      : minecraft_version,
             'minecraft_version_range': minecraft_version_range,
-            'forge_version': forge_version,
-            'forge_version_range': loader_version_range,
-            'loader_version_range': loader_version_range,
-            'mod_version': mod_version,
-            'mod_name': modName,
-            'mod_license': modLicense,
-            'mod_id': modId,
-            'mod_description': modDescription,
-            'mod_authors': modAuthors,
-            'mod_homepage': modHomepage,
-            'mod_sources': modSources,
-            'mod_discord': modDiscord,
-            'mod_kofi': modKofi,
-            'mod_curseforge': modCurseforge,
-            'mod_modrinth': modModrinth,
-            'mod_youtube': modYouTube,
+            'forge_version'          : forge_version,
+            'forge_version_range'    : loader_version_range,
+            'loader_version_range'   : loader_version_range,
+            'mod_version'            : mod_version,
+            'mod_name'               : modName,
+            'mod_license'            : modLicense,
+            'mod_id'                 : modId,
+            'mod_description'        : modDescription,
+            'mod_authors'            : modAuthors,
+            'mod_homepage'           : modHomepage,
+            'mod_sources'            : modSources,
+            'mod_issues'             : modIssues,
+            'mod_discord'            : modDiscord,
+            'mod_kofi'               : modKofi,
+            'mod_curseforge'         : modCurseforge,
+            'mod_modrinth'           : modModrinth,
+            'mod_youtube'            : modYouTube,
     ]
-    filesMatching('fabric.mod.json') { expand(meta) }
-    filesMatching('quilt.mod.json') { expand(meta) }
-    filesMatching('META-INF/*.toml') { expand(meta) }
-    filesMatching('pack.mcmeta') { expand(meta) }
+    filesMatching(["fabric.mod.json", "quilt.mod.json", "pack.mcmeta", "META-INF/*.toml"]) { expand(meta) }
 }
 
 jar {

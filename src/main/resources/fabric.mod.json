@@ -9,15 +9,12 @@
   ],
   "contact": {
     "homepage": "${mod_homepage}",
-    "sources": "${mod_sources}"
+    "sources": "${mod_sources}",
+    "issues": "${mod_issues}"
   },
   "license": "${mod_license}",
   "icon": "icon.png",
   "environment": "*",
-  "depends": {
-    	"fabricloader": ">=0.16.14",
-    	"minecraft": ["1.20","1.20.1","1.20.2","1.20.3","1.20.4","1.20.5","1.20.6"]
-    },
   "custom": {
     "modmenu": {
       "links": {
@@ -26,7 +23,12 @@
         "modmenu.modrinth": "${mod_modrinth}",
         "modmenu.kofi": "${mod_kofi}",
         "modmenu.youtube": "${mod_youtube}"
-      }
+      },
+      "update_checker": true
     }
+  },
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": ">=1.20.0 <=1.20.6"
   }
 }
