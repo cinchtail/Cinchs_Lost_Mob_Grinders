@@ -23,7 +23,7 @@ repositories {
 }
 
 base {
-    archivesName = mod_id + "-[UNIVERSAL-26.3]"
+    archivesName = "CLMG-[UNIVERSAL-26.3]"
 }
 
 def modName = (project.findProperty('mod_name') ?: project.name) as String
