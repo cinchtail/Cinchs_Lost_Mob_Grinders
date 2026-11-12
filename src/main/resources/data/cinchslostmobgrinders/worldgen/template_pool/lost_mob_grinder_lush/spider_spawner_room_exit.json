@@ -1,0 +1,15 @@
+{
+  "name": "cinchslostmobgrinders:lost_mob_grinder_lush/spider_spawner_room_exit",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "cinchslostmobgrinders:lost_mob_grinders/lush/pipes/spider_room_start",
+        "processors": "cinchslostmobgrinders:lost_mob_grinder_lush",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}
